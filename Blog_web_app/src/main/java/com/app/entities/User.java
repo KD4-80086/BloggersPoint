@@ -25,7 +25,7 @@ public class User extends BaseEntity{
 	
 	@Column(length = 15, nullable = false) // NOT NULL constraint
 	private String password;
-
+	//testing comment!!!!
 	public User(String firstName, String lastName, String email, String password) {
 		this.firstName = firstName;
 		this.lastName = lastName;
