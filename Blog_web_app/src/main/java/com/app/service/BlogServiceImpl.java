@@ -1,5 +1,7 @@
 package com.app.service;
 
+import java.util.Collection;
+
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +28,22 @@ public class BlogServiceImpl implements BlogService{
 	public void delete(Long id) {
 		// TODO Auto-generated method stub
 		 blogDao.deleteById(id);
+	}
+	
+	@Override
+	public Collection<Blog> getAll() {
+		// TODO Auto-generated method stub
+		
+		return blogDao.findAllByOrderByCreationDateDesc();
+	}
+	
+     public Blog findBlogById(Blog updatedBlog) {
+		
+		Blog newblog=blogDao.findById(updatedBlog.getId()).orElseThrow(null);
+		newblog.setTitle(updatedBlog.getTitle());
+		newblog.setBody(updatedBlog.getBody());
+		return newblog;
+
 	}
 
 }

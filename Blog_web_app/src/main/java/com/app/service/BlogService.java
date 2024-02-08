@@ -1,5 +1,7 @@
 package com.app.service;
 
+import java.util.Collection;
+
 import com.app.entities.Blog;
 
 public interface BlogService {
@@ -8,5 +10,8 @@ public interface BlogService {
 
     
     void delete(Long id);
+    
+    Blog findBlogById(Blog updatedBlog);
+    Collection<Blog> getAll();
 
 }
