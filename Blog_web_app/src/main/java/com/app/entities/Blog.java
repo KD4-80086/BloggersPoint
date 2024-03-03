@@ -49,6 +49,12 @@ public class Blog extends BaseEntity{
 	@JoinColumn(name = "user_id", referencedColumnName = "id", nullable = false)
 	private User user;
 	
+	@NotNull
+	@ManyToOne
+	@JoinColumn(name = "catagory_id", referencedColumnName = "id", nullable = false)
+	private Catagory catgory;
+	
+	
 
 
 	

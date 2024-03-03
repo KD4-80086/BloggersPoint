@@ -6,11 +6,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.app.daos.UserRegisterDao;
+import com.app.dtos.UserRegisterDto;
 import com.app.entities.User;
 
 public interface UsersRegisterService  {
 	
-	User addUsersDetail(User usr);
+	UserRegisterDto addUsersDetail(UserRegisterDto usr);
 	
 
 }
