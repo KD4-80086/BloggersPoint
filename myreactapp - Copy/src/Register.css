@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Lora:ital,wght@1,400;1,500&family=Playfair+Display:ital,wght@1,600;1,800;1,900&family=Quintessential&family=Source+Serif+4:ital@1&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.outcontainer{
+  background: url("./images/blogbg.jpeg") 
+  no-repeat center fixed;
+  background-size: cover;
+  font-family: "Merriweather", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    font-family: 'Playfair Display', serif;
+    font-size:  1.2rem;
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    margin: 20px;
+    padding: 100px 20px 100px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+}
+.form::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,0.08);
+    border-radius: 10px;
+    pointer-events: none;
+}
+.form h2{
+    text-align: center;
+    margin: 20px;
+}
+
+.box1{
+    position: relative;
+}
+
+.box1 input{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.0rem;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background-color: transparent;
+    color: inherit;
+}
+
+.box2{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+}
+ .btn{
+    width: 150px;
+    padding: 10px;
+    margin: 14px;
+    font-family: 'Playfair Display', serif;
+    background-color: rgb(31, 27, 27);
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor:pointer;
+ }
+ .btn:hover{
+    background: linear-gradient(to right, rgb(161, 161, 161), rgb(206, 205, 205));
+    color: black;
+}
