@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+footer {
+    margin: 10px 10px 0px 10px
+}
+
+footer img {
+    margin-left: 40px;
+}
+
+.copyright {
+    justify-content: center;
+    text-align: center;
+    margin-top: 16px;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(5, 42, 116);
+    margin-left: 80px;
+
+}
+
+.icons a {
+    font-size: 30px;
+    color: rgb(5, 42, 116);
+    margin-left: 20px;
+}
+
+.icons a:hover {
+    color: rgb(49, 118, 255);
+    transition: all 0.2s ease;
+    text-shadow: 2px 2px 4px rgb(5, 42, 116);
+}
